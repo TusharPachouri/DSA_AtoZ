@@ -1,2 +1,1 @@
-The smallest element in the array is: 0
-The smallest element in the array is: 7
+largest Number of the given array is:10

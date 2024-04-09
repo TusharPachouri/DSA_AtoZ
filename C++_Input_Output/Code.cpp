@@ -1,17 +1,14 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
- 
-int sortArr(vector<int>& arr) {
-    sort(arr.begin(),arr.end());
-    return arr[0];
+
+int largestNumberInAnArray(vector<int> &arr){
+    sort(arr.begin(), arr.end());
+    return arr[arr.size() - 1];
 }
- 
-int main() {
-    vector<int> arr1 = {2,5,1,3,0};
-    vector<int> arr2 = {8,10,7,9};
-   
-    cout<<"The smallest element in the array is: "<<sortArr(arr1)<<endl;
-    cout<<"The smallest element in the array is: "<<sortArr(arr2);
-   
-    return 0;
+
+int main(){
+    vector<int> arr1 = {1,2,4,6,7,4,9,10,2};
+    int largest = largestNumberInAnArray(arr1); 
+    cout << "largest Number of the given array is:" << largest;  
+    return 0; 
 }
