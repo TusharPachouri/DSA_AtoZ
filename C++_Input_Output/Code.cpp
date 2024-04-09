@@ -1,17 +1,17 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
-int main(){
-    // string name;
-    // int age, salary;
-    // cin >> name >> age >> salary;
-    // cout << "Name: " << name << endl;
-    // cout << "Age: " << age << endl;
-    // cout << "Salary: " << salary << endl; 
-    string fullname;
-    // cin >> fullname; if I give input as Tushar Pachouri
-    // cout << fullname;  output would be Tushar
-    // In order to use full name as whole
-    getline(cin, fullname);
-    cout << fullname;
-    return 0; 
+ 
+int sortArr(vector<int>& arr) {
+    sort(arr.begin(),arr.end());
+    return arr[0];
+}
+ 
+int main() {
+    vector<int> arr1 = {2,5,1,3,0};
+    vector<int> arr2 = {8,10,7,9};
+   
+    cout<<"The smallest element in the array is: "<<sortArr(arr1)<<endl;
+    cout<<"The smallest element in the array is: "<<sortArr(arr2);
+   
+    return 0;
 }
