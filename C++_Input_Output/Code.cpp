@@ -1,14 +1,37 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int largestNumberInAnArray(vector<int> &arr){
-    sort(arr.begin(), arr.end());
-    return arr[arr.size() - 1];
+bool palindromeNumberCheck(int num)
+{
+    int rev = 0;
+    int rem = 0;
+    int dummy = num;
+    while (num > 0)
+    {
+        rem = num % 10;
+        rev = rev * 10 + rem;
+        num = num / 10;
+    }
+    if (dummy == rev)
+    {
+        return true;
+    }
+    return false;
 }
 
-int main(){
-    vector<int> arr1 = {1,2,4,6,7,4,9,10,2};
-    int largest = largestNumberInAnArray(arr1); 
-    cout << "largest Number of the given array is:" << largest;  
-    return 0; 
+int main()
+{
+    int num;
+    cout << "Enter a Number: " << endl;
+    cin >> num;
+    bool result = palindromeNumberCheck(num);
+    if (result)
+    {
+        cout << "Given number is a palindrome number";
+    }
+    else
+    {
+        cout << "Given number is not a palindrome number";
+    }
+    return 0;
 }

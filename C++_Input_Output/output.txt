@@ -1,1 +1,2 @@
-largest Number of the given array is:10
+Enter a Number: 
+Given number is a palindrome number

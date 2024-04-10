@@ -59,5 +59,8 @@
   "cSpell.words": [
     "Pachouri",
     "Tushar"
-  ]
+  ],
+  "files.associations": {
+    "iostream": "cpp"
+  }
 }
