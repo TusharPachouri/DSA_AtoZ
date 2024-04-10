@@ -1,2 +1,0 @@
-Enter a Number: 
-Given number is a palindrome number
