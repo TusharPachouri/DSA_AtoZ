@@ -7,8 +7,25 @@ bool primeNumberCheck(int num)
     {
         return false;
     }
-    for (int i = 2; i < num; i++){
-        if(num % i == 0){
+    for (int i = 2; i < num; i++)
+    {
+        if (num % i == 0)
+        {
+            return false;
+        }
+    }
+    return true;
+}
+bool primeNumberCheckOptimal(int num)
+{
+    if (num < 2)
+    {
+        return false;
+    }
+    for (int i = 2; i < sqrt(num); i++)
+    {
+        if (num % i == 0)
+        {
             return false;
         }
     }
@@ -19,9 +36,12 @@ int main()
 {
     int num;
     cin >> num;
-    if(primeNumberCheck(num)){
+    if (primeNumberCheck(num))
+    {
         cout << "Number is prime";
-    }else{
+    }
+    else
+    {
         cout << "Number is not prime";
     }
 }
