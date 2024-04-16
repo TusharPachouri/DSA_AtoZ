@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "C++_Input_Output"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"iostream": "cpp"
+		}
+	}
+}
