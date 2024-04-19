@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "DataStructuresAndAlgorithms",
+			"path": "../../.."
+		},
+		{
+			"name": "C++_Input_Output",
+			"path": "../../../C++_Input_Output"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"iostream": "cpp",
+			"random": "cpp",
+			"ostream": "cpp"
+		}
+	}
+}
