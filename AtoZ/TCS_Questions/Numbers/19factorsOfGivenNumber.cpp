@@ -11,7 +11,7 @@ void Divisor(int n)
             // If divisors are equal, print only one
             if (n / i == i)
                 cout << " " << i;
-
+                
             else // Otherwise print both
                 cout << " " << i << " " << n / i;
         }
