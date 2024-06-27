@@ -15,7 +15,13 @@
 			"string_view": "cpp",
 			"regex": "cpp",
 			"expected": "cpp",
-			"optional": "cpp"
-		}
+			"optional": "cpp",
+			"chrono": "cpp",
+			"typeindex": "cpp",
+			"typeinfo": "cpp"
+		},
+		"cSpell.words": [
+			"Ecapsulation"
+		]
 	}
 }
