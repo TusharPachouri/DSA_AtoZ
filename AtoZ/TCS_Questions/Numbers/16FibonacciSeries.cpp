@@ -16,14 +16,14 @@ int main()
     cout << "Enter a number: ";
     cin >> num;
     cout << num << endl;
-    // for (int i = 0; i < num; i++)
-    // {
-    //     cout << fibSeries(i);
-    //     if (i < num - 1)
-    //     {
-    //         cout << " ";
-    //     }
-    // }
+    for (int i = 0; i < num; i++)
+    {
+        cout << fibSeries(i);
+        if (i < num - 1)
+        {
+            cout << " ";
+        }
+    }
     // cout << endl;
     if (num == 0)
     {
