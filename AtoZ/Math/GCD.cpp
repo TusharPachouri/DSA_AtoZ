@@ -1,5 +1,12 @@
 #include <iostream>
 using namespace std;
+
+int gcd(int a, int b) {
+    if (a == 0)
+        return b;
+    return gcd(b % a, a);
+}
+
 int main()
 {
     int num1, num2;
@@ -8,11 +15,11 @@ int main()
     {
         if (num1 > num2)
         {
-            num1 = num1 - num2;
+            num1 = num1 % num2;
         }
         else
         {
-            num2 = num2 - num1;
+            num2 = num2 % num1;
         }
     }
     if (num1 == 0)
